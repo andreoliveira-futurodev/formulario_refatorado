@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url("https://blog.gokursos.com/wp-content/uploads/2023/05/programming-background-with-person-working-with-codes-computer-1200x800.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.form-container {
+  background-color: rgba(68, 68, 109, 0.6); 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 100px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #dd5fd0;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: cornsilk;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #c25b2f;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #1adc3a;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #b300098f;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 1rem;
+  }
+.form-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  form {
+    padding: 2rem;
+  }
+.form-container  {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1025px) {
+  form {
+    max-width: 800px;
+  }
+}
